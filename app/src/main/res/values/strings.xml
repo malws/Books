@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Books</string>
+    <string name="title_book_detail">Book Detail</string>
+    <string name="authorTV">Autor:</string>
+    <string name="AuthorHint">Autor</string>
+    <string name="TitleTV">Tytuł:</string>
+    <string name="TitleHint">Tytuł</string>
+    <string name="YearTV">Rok:</string>
+    <string name="YearHint">Rok</string>
+    <string name="ImageTV">Okładka:</string>
+    <string name="ImageHint">Nazwa pliku okładki</string>
+    <string name="ShortcutTV">Streszczenie:</string>
+    <string name="ShortcutHint">Streszczenie</string>
+    <string name="ButtonSend">Dodaj</string>
+</resources>

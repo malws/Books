@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.malwinka.books.NewBookActivity"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_horizontal"
+    android:stretchColumns="1">
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/authorTV"
+            android:textSize="25sp"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/author_et"
+            android:hint="@string/AuthorHint"
+            android:textColorHint="@color/colorAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/TitleTV"
+            android:textSize="25sp"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/title_et"
+            android:hint="@string/TitleHint"
+            android:textColorHint="@color/colorAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/YearTV"
+            android:textSize="25sp"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/year_et"
+            android:hint="@string/YearHint"
+            android:textColorHint="@color/colorAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/ShortcutTV"
+            android:textSize="25sp"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/shortcut_et"
+            android:hint="@string/ShortcutHint"
+            android:textColorHint="@color/colorAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="@string/ImageTV"
+        android:textSize="25sp"
+        android:textColor="@color/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/img_button"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@color/colorPrimary"
+                android:onClick="getImage"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+</TableRow>
+<TableRow>
+    <Button
+        android:id="@+id/newdata_button"
+        android:text="@string/ButtonSend"
+        android:textColor="@color/colorText"
+        android:textSize="25sp"
+        android:onClick="sendTheBook"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"/>
+    <ImageView
+    android:id="@+id/newdata_imageview"/>
+</TableRow>
+
+</TableLayout>
