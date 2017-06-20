@@ -1,2 +1,2 @@
 # Books
-Only for TABLETS now.
+For TABLETS only now.
